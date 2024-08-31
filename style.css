@@ -516,11 +516,11 @@ header{
 
     }
     .footer-container{
-        height:85px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+         height:85px;
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
         flex-wrap: wrap;
         background-color: var(--secondry);
         color:white;
