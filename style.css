@@ -328,6 +328,221 @@ header{
   .footer-container .footer-center{
     line-height: 10px;
   }
-  @media only screen and (max-width) {
-      
+  .sidebar{
+    display: none;
   }
+  #manubar{
+    display: none;
+  }
+  @media only screen and (max-width:769px) {
+    #manubar{
+        display: block;
+        position: absolute;
+        top:40vh;
+        right:50px;
+        z-index: 90;
+        background-color: red;
+        height: 100px;
+        align-content: center;
+        text-align: center;
+        border-radius: 50px;
+        width: 100px;
+        font-size:50px;
+      } 
+      #manubar::after{
+        content: 'Manu';
+        position: absolute;
+        font-size: 14px;
+        top:75px;
+        left: 27px;
+        font-weight: 700;
+       }
+    .nav1{
+        display: flex;
+        background-color: white;
+        position: relative;
+    }
+    .nav1 .right i{
+        font-size: 15px;
+        margin: 0 5px;
+    }  
+    /* media query of navigation 1 ended */
+    .nav2{
+        width: 100%;
+        height: 90px; 
+     }
+     .nav2 .nav2-left i,
+     .nav2 .nav2-right i{
+         margin-right: 2px;
+     }
+     .nav2 .nav2-center h1{
+          font-weight:bold;
+          font-size: 20px;
+     }
+       
+     .nav2 .nav2-center p{
+        
+          font-size: 10px;
+     }
+     .nav2 .nav2-left,.nav2-right{
+              font-size:10px ;
+     }       
+     .nav3{
+        display: none;
+     }     
+     .featured{
+        background-attachment: fixed;
+     }
+     /* media wuery nav 3 ended */
+     .letest{
+        padding: 0px 50px;
+        
+    }
+    .product-intro{text-align: center;}
+    .product-intro h1{
+        color: var(--primary);
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .product-intro h1 span{
+        color: var(--secondry);
+        text-shadow: 0 2px 3px white;
+    }
+    .letest .product-intro p{
+        color:rgb(172, 196, 172);
+        margin: 12px 0;
+    }
+    .card-contianer{
+        margin: 2rem 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+    .card-contianer .card{
+        flex-basis: 100%;
+        padding: 0.8rem;
+        position: relative;
+        text-align: center;
+    }
+    .card img{
+        width: 100%;
+        height: 50vh;
+        transition: all 0.5s ease-in-out;
+    }
+    .card i{
+        color:goldenrod;
+        margin: 15px 0;
+    }
+    .card button{
+        margin: 15px;
+        outline: none;
+        background-color: var(--secondry);
+        color: white;
+        padding:3px 15px;
+    }
+    .card h1{
+        transition: all 0.3s ease-in-out;
+    }
+    .card:hover img , .card:hover h1{
+        transform: scale(0.9);
+        color: var(--primary);
+    }
+    .sidebar {
+        display: block;
+        background-color:transparent;
+        backdrop-filter: blur(22px);
+        position: absolute;
+        height: 500px;
+        width:0px;
+        top:22.5%;
+        left:0;
+        z-index: 99;
+        color: yellow;
+        line-height:2.7rem;
+        overflow: hidden;
+    }
+    .sidebar ul{
+        margin-left: 12px;
+        list-style: none;
+        text-align: left;
+    }
+    .sidebar ul li{
+        font-size: 1.5rem;
+        display:block;
+       
+        width: 150px;
+        position:relative;
+        z-index: 99;
+    
+    }
+    .sidebar ul li a{
+        text-decoration: none;
+        font-weight: 500;
+        color:white;
+        display: block;
+        transition: 0.4s ease-out;
+    }
+    .sidebar ul li i{
+        padding: 12px 3px;
+        margin: 0px 0px;
+        color: var(--primary);
+        
+    }
+    .sidebar ul li a:hover{
+        color: var(--primary);
+    }
+    
+    .sidebar ul ul li{
+        border-radius: 5px;
+    }
+    .sidebar ul ul{
+        display: none;
+        position: absolute;
+        top:50px;
+        left:0px;
+        
+    }
+    .sidebar ul ul li{
+        background-color: black;
+        border-bottom: 1px solid var(--primary)
+    }
+    
+    .sidebar ul li:hover>ul{
+        display: block;
+
+    }
+    .footer-container{
+        height:85px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--secondry);
+        color:white;
+      }
+      .footer-container div h1{
+        font-size: 23px;
+        color:var(--secondry);
+        text-shadow: 2px 2px 3px rgb(223, 223, 223); 
+      }
+      .footer-container p{
+        font-size: 12px;
+      }
+      .footer-container div span{
+        color: var(--primary);
+        text-shadow: none;
+      }
+      .footer-container div{
+        flex-basis: 50%;
+        text-align: center;
+
+      }
+      .footer-container .footer-center{
+        line-height: 10px;
+      }             
+    }

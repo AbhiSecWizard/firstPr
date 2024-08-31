@@ -18,3 +18,16 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
     },
 });
+
+let sidebar =document.querySelector(".sidebar");
+let manubar =document.querySelector("#manubar");
+
+manubar.addEventListener("click",()=>{
+    
+     if(sidebar.style.width == "0px"){
+        sidebar.style.width = "350px"
+        sidebar.style.transition= "0.5s ease"
+     }else{
+        sidebar.style.width = "0px"
+     }
+})
