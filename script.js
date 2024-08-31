@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
-      centeredSlides: true,
+    centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 50,
@@ -25,8 +25,10 @@ let manubar =document.querySelector("#manubar");
 manubar.addEventListener("click",()=>{
     
      if(sidebar.style.width == "0px"){
-        sidebar.style.width = "350px"
+        sidebar.style.width = "250px"
         sidebar.style.transition= "0.5s ease"
+        manubar.style.zIndex= "100";
+        manubar.style.position = "absolute"
      }else{
         sidebar.style.width = "0px"
      }

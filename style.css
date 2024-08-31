@@ -334,27 +334,28 @@ header{
   #manubar{
     display: none;
   }
-  @media only screen and (max-width:769px) {
+  @media only screen and (max-width:600px) {
     #manubar{
+        position: relative;
         display: block;
         position: absolute;
         top:40vh;
-        right:50px;
+        right:10px;
         z-index: 90;
         background-color: red;
-        height: 100px;
+        height: 80px;
+        width: 80px;
         align-content: center;
         text-align: center;
         border-radius: 50px;
-        width: 100px;
-        font-size:50px;
+        font-size:30px;
       } 
       #manubar::after{
         content: 'Manu';
         position: absolute;
-        font-size: 14px;
-        top:75px;
-        left: 27px;
+        font-size: 10px;
+        top:55px;
+        left: 25px;
         font-weight: 700;
        }
     .nav1{
@@ -364,7 +365,7 @@ header{
     }
     .nav1 .right i{
         font-size: 15px;
-        margin: 0 5px;
+        margin: 0 2px; 
     }  
     /* media query of navigation 1 ended */
     .nav2{
@@ -544,5 +545,41 @@ header{
       }
       .footer-container .footer-center{
         line-height: 10px;
-      }             
+      }
+      .featured-text{
+        top:50%;
+        left: 10%;
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+        padding: 10px 0;
+     
+    }
+    .popular-prodect .letest .card-contianer .card img {
+        height: 60vh;
+        width: 110%;
+    }
+    .trends .letest {
+        padding:12px;
+        background-color: rgba(0,0,0,0.3);
+    }
+    
+    .trends .swiper {
+        width: 100%;
+        padding: 50px;
+        
+      }
+    
+      .trends .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+    
+      .trends .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+        
     }
